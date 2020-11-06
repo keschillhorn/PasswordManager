@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="16.0" layoutY="26.0" prefHeight="25.0" prefWidth="196.0" text="Password" textFill="#982651" AnchorPane.topAnchor="26.0">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="16.0" layoutY="79.0" prefHeight="25.0" prefWidth="196.0" text="Manager" textFill="#982651">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="16.0" layoutY="361.0" prefHeight="25.0" prefWidth="196.0" text="By: Konstantin Schillhorn" textFill="#982651">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: #424242;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="44.0" layoutY="140.0" prefHeight="25.0" prefWidth="196.0" promptText="Username" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="140.0" />
+            <PasswordField fx:id="enterPasswordField" alignment="CENTER" layoutX="44.0" layoutY="200.0" prefHeight="25.0" prefWidth="196.0" promptText="Password" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="200.0" />
+            <Button fx:id="loginButton" alignment="CENTER" layoutX="44.0" layoutY="260.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="196.0" style="-fx-background-color: #982651;" text="Login" textFill="WHITE" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="260.0" />
+            <Label fx:id="statusField" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="237.0" prefHeight="17.0" prefWidth="196.0" textFill="#db02fa" />
+            <Button fx:id="cancelButton" alignment="CENTER" layoutX="44.0" layoutY="308.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="196.0" style="-fx-background-color: #982651;" text="Close" textFill="WHITE" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="320.0" />
+            <Hyperlink fx:id="caHyper" alignment="CENTER" contentDisplay="CENTER" layoutX="102.0" layoutY="363.0" onAction="#accountHyperOnAction" text="Create account" textFill="#982651" AnchorPane.leftAnchor="102.0" />
+            <Label alignment="CENTER" layoutX="65.0" layoutY="29.0" prefHeight="25.0" prefWidth="196.0" text="Login" textFill="#982651" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="26.0">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </center>
+</BorderPane>
